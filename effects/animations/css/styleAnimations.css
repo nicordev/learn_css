@@ -1,0 +1,108 @@
+
+/*
+	Balises
+	-------
+*/
+
+
+/*
+	Identifiants
+	------------
+*/
+#square1 {
+}
+
+#square1:hover {
+    animation: masuperanimation 2s;
+}
+
+#square2 {
+    transition-property: background-color, width, height;
+    transition-duration: 250ms;
+}
+
+#square2:hover {
+    animation-name: masuperanimation;
+    animation-duration: 2s;
+    animation-delay: 0.4ms;
+    animation-timing-function: ease; /* ease linear ease-in ease-out ease-in-out  cubic-bezier(val1, val2, val3, val4) step-start step-end steps(X) */
+    animation-iteration-count: infinite;
+    animation-direction: alternate; /* alternate reverse normal */
+    animation-fill-mode: none; /* none forwards backwards */
+}
+
+#square3 {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-delay: 0.4s; /* Démarre au bout de 0,4s */
+}
+
+#square3:hover {
+    background-color: green;
+}
+
+#square4 {
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease; /* ease linear ease-in ease-out ease-in-out */
+}
+
+#square4:hover {
+    transform: translateX(200px);
+}
+
+#square5 {
+    transition-timing-function: cubic-bezier(.43,-0.83,.53,1.73);
+    transition-duration: 1s;
+}
+
+#square5:hover {
+    transform: translateX(200px);
+}
+
+#square6 {
+    transition: transform 1s ease;
+}
+
+#square6:hover {
+    transform: translateX(200px);
+}
+
+#square7 {
+    transition: background-color 2s ease, width 1s linear;
+}
+
+#square7:hover {
+    background-color: rgb(52, 47, 130);
+    width: 50px;
+}
+
+
+/*
+	Classes
+	-------
+*/
+.square {
+    width: 200px;
+    height: 150px;
+    background-color: rgb(74, 126, 157);
+    margin: 1em;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+
+@keyframes masuperanimation {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(150px);
+    }
+
+    100% {
+        transform: translateX(150px) rotate(30deg);
+    }
+}

@@ -1,0 +1,74 @@
+
+/*
+	Balises
+	-------
+*/
+img {
+    margin: 1em;
+}
+
+
+/*
+	Identifiants
+	------------
+*/
+#img1 {
+    transform: rotate(10deg);
+}
+
+#img2 {
+    transform-origin: 0 0; /* La transformation partira du coin en haut à gauche */ 
+    transform: rotate(10deg);
+}
+
+#img3 {
+    transform-origin: 100% 100%; /* En bas à droite */
+    transform: rotate(10deg);
+}
+
+#img4 {
+    transform-origin: top 0 left 30px;
+    transform: rotate(10deg);
+}
+
+#img5 {
+    transform: scale(0.6);
+}
+
+#img6 {
+    transform: scale(1.3, 0.6);
+}
+
+#img7 {
+    transform: scaleX(0.6);
+}
+
+#img8 {
+    transform: translate(30px, -90px);
+}
+
+#img9 {
+    transform: skewX(50deg); /* skewY */
+}
+
+#img10 {
+    transform: scale(0.7) rotate(15deg) skewY(10deg);
+}
+
+#img11 {
+    
+}
+
+
+/*
+	Classes
+	-------
+*/
+
+
+/*
+	Media queries
+	-------------
+*/
+@media print {
+}

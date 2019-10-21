@@ -1,0 +1,91 @@
+
+/*
+	Balises
+	-------
+*/
+
+
+/*
+	Identifiants
+	------------
+*/
+#square1 {
+    transition-property: background-color; /* Active la transition sur background-color */
+    transition-duration: 1s; /* La transition dure 1s */
+}
+
+#square1:hover {
+    background-color: green;
+}
+
+#square2 {
+    transition-property: background-color, width, height;
+    transition-duration: 250ms;
+}
+
+#square2:hover {
+    background-color: green;
+    height: 50px;
+    width: 600px;
+}
+
+#square3 {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-delay: 0.4s; /* Démarre au bout de 0,4s */
+}
+
+#square3:hover {
+    background-color: green;
+}
+
+#square4 {
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease; /* ease linear ease-in ease-out ease-in-out */
+}
+
+#square4:hover {
+    transform: translateX(200px);
+}
+
+#square5 {
+    transition-timing-function: cubic-bezier(.43,-0.83,.53,1.73);
+    transition-duration: 1s;
+}
+
+#square5:hover {
+    transform: translateX(200px);
+}
+
+#square6 {
+    transition: transform 1s ease;
+}
+
+#square6:hover {
+    transform: translateX(200px);
+}
+
+#square7 {
+    transition: background-color 2s ease, width 1s linear;
+}
+
+#square7:hover {
+    background-color: rgb(52, 47, 130);
+    width: 50px;
+}
+
+
+/*
+	Classes
+	-------
+*/
+.square {
+    width: 200px;
+    height: 150px;
+    background-color: rgb(74, 126, 157);
+    margin: 1em;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}

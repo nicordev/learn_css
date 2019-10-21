@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="box.css">
+    <style>
+        body, html {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .rotate3d {
+            transform: rotate3d(0, 1, 1, 45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="face front">Front</div>
+        <div class="face back">Back</div>
+        <div class="face left">Left</div>
+        <div class="face right">Right</div>
+        <div class="face top">Top</div>
+        <div class="face bottom">Bottom</div>
+    </div>
+
+    <script>
+        let boxElts = document.getElementsByClassName("box");
+
+        console.log(boxElts[0].getBoundingClientRect());
+
+        document.addEventListener("mousemove", event => {
+            if (event.buttons > 0) {
+                for (let boxElt of boxElts) {
+                    boxElt.style.transform = "rotate3d(0, 1, 0, " + event.clientX + "deg) rotate3d(1, 0, 0, " + event.clientY + "deg)";
+                }
+            }
+        })
+    </script>
+</body>
+</html>

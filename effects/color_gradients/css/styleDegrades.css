@@ -1,0 +1,78 @@
+
+/*
+	Balises
+	-------
+*/
+body {}
+
+/*
+	Identifiants
+	------------
+*/
+#square1 {
+    background-image: linear-gradient(rgb(58, 106, 146), rgb(158, 190, 216));
+}
+
+#square2 {
+    background-image: linear-gradient(to right, rgb(58, 106, 146), rgb(158, 190, 216));
+}
+
+#square3 {
+    background-image: linear-gradient(to right, blue, green, #0ff, rgb(200, 30, 170));
+}
+
+#square4 {
+    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+    width: 100%;
+}
+
+#square5 {
+    background-image: linear-gradient(to right, blue 0%, orange 30%);
+}
+
+#square6 {
+    background-image: linear-gradient(to right, blue, yellow 80px);
+}
+
+#square7 {
+    background-image: radial-gradient(circle at center, white, green);
+}
+
+#square8 {
+    background-image: radial-gradient(ellipse at center, white, green);
+}
+
+#square9 {
+    background-image: radial-gradient(circle at top left, white, green);
+}
+
+#square10 {
+    background-image: radial-gradient(closest-side ellipse at center, white, green); /* closest-corner closest-side farthest-corner farthest-side*/
+}
+
+#square11 {
+    background-image: repeating-linear-gradient(to right, green, red, blue, green 200px);
+}
+
+#square12 {
+    background: repeating-radial-gradient(farthest-side ellipse at center, green, red, green 80px);
+}
+
+
+/*
+	Classes
+	-------
+*/
+.square {
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+}
+
+
+/*
+	Media queries
+	-------------
+*/
+@media print {
+}

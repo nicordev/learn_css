@@ -1,0 +1,25 @@
+.ma_grille_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.une_cellule_1 {
+    background-color: chocolate;
+    border: 1px solid rebeccapurple;
+}
+
+.ma_grille_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.une_cellule_2 {
+    background-color: rebeccapurple;
+    border: 1px solid brown;
+}

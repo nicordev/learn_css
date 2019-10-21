@@ -1,0 +1,53 @@
+
+/*
+	Balises
+	-------
+*/
+
+
+/*
+	Identifiants
+	------------
+*/
+#section1 {
+    column-count: 4;
+}
+
+#section2 {
+    columns: 4 100px;
+}
+
+#section3 {
+    columns: 4 100px;
+    column-gap: 100px;
+}
+
+#section4 {
+    columns: 4 100px;
+    column-rule: 2px solid #555;
+}
+
+#section5_span {
+    column-span: all;
+}
+
+#section6 {
+    hyphens: auto;
+}
+
+
+/*
+	Classes
+	-------
+*/
+.many_columns {
+    columns: 4 100px; /* Pas encore supporté par Firefox */
+}
+
+
+/*
+	Media queries
+	-------------
+*/
+@media print {
+}
