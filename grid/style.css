@@ -1,25 +1,42 @@
-.ma_grille_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+body {
+  padding: 20px;
+  font-family: Helvetica;
+  background-color: #20262e;
 }
 
-.une_cellule_1 {
-    background-color: chocolate;
-    border: 1px solid rebeccapurple;
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-gap: 10px;
 }
 
-.ma_grille_2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+li {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 20px;
+  font-size: 14px;
 }
 
-.une_cellule_2 {
-    background-color: rebeccapurple;
-    border: 1px solid brown;
+.info {
+  text-align: center;
+  font-size: 13px;
+  padding: 20px 0;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 25%;
+  grid-template-rows: 1fr 1fr 2fr 25%;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.box {
+  min-width: 50px;
+  min-height: 50px;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 20px;
+  font-size: 14px;
 }

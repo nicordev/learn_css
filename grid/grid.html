@@ -1,77 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>grille css</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="ma_grille_1">
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-            <div class="une_cellule_1">zogzog</div>
-        </div>
 
-        <hr>
+<head>
+    <meta charset="UTF-8">
+    <title>grille css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <div class="ma_grille_2">
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-            <div class="une_cellule_2">zogzog</div>
-        </div>
-    </body>
+<body>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+    </ul>
+
+    <div class="info">Resize this panel to see grids respond</div>
+
+    <div id="box-wrapper" class="grid"></div>
+    <script>
+        var boxWrapper = document.getElementById("box-wrapper");
+
+        for (let i = 0, element; i < 23; i++) {
+            element = document.createElement("div");
+            element.textContent = i + 1;
+            element.classList.add("box");
+            boxWrapper.appendChild(element);
+        }
+    </script>
+</body>
+
 </html>
